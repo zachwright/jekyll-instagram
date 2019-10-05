@@ -70,7 +70,7 @@ module Jekyll
     end
 
     def recent_photos
-      method = "/users/self/media/recent"
+      method = '/users/self/media/recent'
       keys = "/?access_token=#{@access_token}"
 
       response = Net::HTTP.get_response(URI.parse(@api_url + method + keys))
